@@ -1269,7 +1269,7 @@ p  { color: var(--light-gray); line-height: 1.75; }
   box-shadow: 0 0 0 3px rgba(201,162,39,0.08);
 }
 .form-group input::placeholder,
-.form-group textarea::placeholder { color: #444; }
+.form-group textarea::placeholder { color: #888; }
 .form-success {
   display: none;
   text-align: center;
