@@ -40,15 +40,52 @@
   <!-- ══════════════ PAGE HERO ══════════════ -->
   <section class="page-hero" style="padding-bottom:3rem;">
     <div class="container">
-      <div class="page-hero-content">
-        <span class="section-label">Get in Touch</span>
-        <h1>Contact Us</h1>
-        <p>
-          Questions about the robe, ordering, wholesale, or the technology?
-          We'd like to hear from you.
-        </p>
+      <div class="contact-hero-grid">
+        <div class="page-hero-content" style="margin:0;">
+          <span class="section-label">Get in Touch</span>
+          <h1>Contact Us</h1>
+          <p style="margin-bottom:0;">
+            Questions about the robe, ordering, wholesale, or the technology?
+            We'd like to hear from you.
+          </p>
+        </div>
+        <div class="contact-hero-team">
+          <div style="text-align:center;">
+            <img src="images/tariq.png" alt="Alex (Tariq) Albazzaz"
+                 style="width:100%;max-width:140px;aspect-ratio:1/1;object-fit:cover;border-radius:50%;border:1px solid var(--border-gold);">
+            <h5 style="margin-top:0.6rem;font-size:0.92rem;">Alex (Tariq) Albazzaz</h5>
+            <p style="font-family:var(--heading);font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-top:0.15rem;line-height:1.5;">
+              Research, Procurement and Marketing
+            </p>
+          </div>
+          <div style="text-align:center;">
+            <img src="images/mo-now.png" alt="Mohamed Abdelfatah"
+                 style="width:100%;max-width:140px;aspect-ratio:1/1;object-fit:cover;border-radius:50%;border:1px solid var(--border-gold);">
+            <h5 style="margin-top:0.6rem;font-size:0.92rem;">Mohamed Abdelfatah</h5>
+            <p style="font-family:var(--heading);font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-top:0.15rem;line-height:1.5;">
+              Business Development and Sales
+            </p>
+          </div>
+        </div>
       </div>
     </div>
+    <style>
+      .contact-hero-grid {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 3rem;
+        align-items: center;
+      }
+      .contact-hero-team {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+      }
+      @media (max-width: 768px) {
+        .contact-hero-grid { grid-template-columns: 1fr; gap: 2rem; }
+        .contact-hero-team { max-width: 360px; margin: 0 auto; }
+      }
+    </style>
   </section>
 
   <!-- ══════════════ CONTACT ══════════════ -->
@@ -171,24 +208,6 @@
                 <i class="fas fa-paper-plane"></i> Send Message
               </button>
 
-              <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-top:1.75rem;">
-                <div style="text-align:center;">
-                  <img src="images/tariq.png" alt="Alex (Tariq) Albazzaz"
-                       style="width:100%;max-width:120px;aspect-ratio:1/1;object-fit:cover;border-radius:50%;border:1px solid var(--border-gold);">
-                  <h5 style="margin-top:0.6rem;font-size:0.9rem;">Alex (Tariq) Albazzaz</h5>
-                  <p style="font-family:var(--heading);font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-top:0.15rem;line-height:1.5;">
-                    Research &amp; Design, Procurement
-                  </p>
-                </div>
-                <div style="text-align:center;">
-                  <img src="images/mo-now.png" alt="Mohamed Abdelfatah"
-                       style="width:100%;max-width:120px;aspect-ratio:1/1;object-fit:cover;border-radius:50%;border:1px solid var(--border-gold);">
-                  <h5 style="margin-top:0.6rem;font-size:0.9rem;">Mohamed Abdelfatah</h5>
-                  <p style="font-family:var(--heading);font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-top:0.15rem;line-height:1.5;">
-                    Business Development &amp; Sales
-                  </p>
-                </div>
-              </div>
 
             </form>
 
