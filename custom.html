@@ -20,22 +20,12 @@
       flex-direction: column;
       align-items: center;
       gap: 0.6rem;
-      cursor: pointer;
     }
     .swatch-circle {
       width: 52px; height: 52px;
       border-radius: 50%;
       border: 2px solid transparent;
       position: relative;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .swatch:hover .swatch-circle {
-      transform: scale(1.1);
-      box-shadow: 0 0 0 3px rgba(255,255,255,0.15);
-    }
-    .swatch.active .swatch-circle {
-      border-color: var(--gold);
-      box-shadow: 0 0 0 3px var(--gold-dim);
     }
     .swatch-label {
       font-family: var(--heading);
@@ -44,7 +34,6 @@
       text-transform: uppercase;
       color: var(--gray);
     }
-    .swatch.active .swatch-label { color: var(--gold); }
     .swatch-circle.red    { background: #CC2233; }
     .swatch-circle.blue   { background: #1A3A8F; }
     .swatch-circle.navy   { background: #0D1B3E; }
@@ -342,7 +331,7 @@
           <div style="margin-top:2.5rem;">
             <div class="section-label" style="margin-bottom:0.75rem;">Available Colors</div>
             <div class="color-swatches">
-              <div class="swatch active">
+              <div class="swatch">
                 <div class="swatch-circle red"></div>
                 <span class="swatch-label">Red</span>
               </div>
